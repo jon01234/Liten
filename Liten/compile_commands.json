@@ -1,0 +1,32 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-fPIC",
+      "-DLIT_PLATFORM_LINUX",
+      "-DLIT_BUILD_DLL",
+      "-c",
+      "-o",
+      "src/ui/window.o",
+      "src/ui/window.c"
+    ],
+    "directory": "/home/jonathan/Dev/Liten/Liten",
+    "file": "/home/jonathan/Dev/Liten/Liten/src/ui/window.c",
+    "output": "/home/jonathan/Dev/Liten/Liten/src/ui/window.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-fPIC",
+      "-DLIT_PLATFORM_LINUX",
+      "-DLIT_BUILD_DLL",
+      "-c",
+      "-o",
+      "src/glad.o",
+      "src/glad.c"
+    ],
+    "directory": "/home/jonathan/Dev/Liten/Liten",
+    "file": "/home/jonathan/Dev/Liten/Liten/src/glad.c",
+    "output": "/home/jonathan/Dev/Liten/Liten/src/glad.o"
+  }
+]

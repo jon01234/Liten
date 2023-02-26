@@ -6,6 +6,9 @@ objects = $(source:.c=.o)
 lflags = -Lbin -lliten -Wl,-rpath bin 
 cflags = -I../Liten/include
 
+bear:
+	bear -- make $(exec)
+
 $(exec): $(objects)
 	$(CC) $(lflags) -o $@ $^
 
