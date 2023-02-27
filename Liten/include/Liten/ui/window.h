@@ -21,9 +21,7 @@ struct __lwindow_priv__
 };
 
 LIT_API lWindow *Lit_Window(char *title, int width, int height);
-LIT_API void Lit_UpdateWindow(lWindow *win);
-// TODO: create a vec4
-LIT_API void Lit_ClearWindow(lWindow *win, float r, float g, float b, float a);
+LIT_API void Lit_WindowUpdate(lWindow *win);
 LIT_API void Lit_DestroyWindow(lWindow *win);
 
 #endif // !LIT_WINDOW_H

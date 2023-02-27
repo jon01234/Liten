@@ -1,15 +1,1 @@
-[
-  {
-    "arguments": [
-      "/usr/bin/gcc",
-      "-I../Liten/include",
-      "-c",
-      "-o",
-      "src/main.o",
-      "src/main.c"
-    ],
-    "directory": "/home/jonathan/Dev/Liten/test",
-    "file": "/home/jonathan/Dev/Liten/test/src/main.c",
-    "output": "/home/jonathan/Dev/Liten/test/src/main.o"
-  }
-]
+[]

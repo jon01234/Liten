@@ -27,6 +27,8 @@ lWindow *Lit_Window(char *title, int width, int height)
     glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 
+    glfwWindowHint(GLFW_RESIZABLE, GLFW_FALSE);
+
     ((struct __lwindow_priv__ *)w->lwinpriv)->window = glfwCreateWindow(w->width, w->height, w->title, NULL, NULL);
 
     if (((struct __lwindow_priv__ *)w->lwinpriv)->window == 0x00)
@@ -49,19 +51,12 @@ lWindow *Lit_Window(char *title, int width, int height)
     return w;
 }
 
-void Lit_UpdateWindow(lWindow *win)
+void Lit_WindowUpdate(lWindow *win)
 {
     // update the running variable
     win->running = !glfwWindowShouldClose(((struct __lwindow_priv__ *)win->lwinpriv)->window);
 
-    glfwSwapBuffers(((struct __lwindow_priv__ *)win->lwinpriv)->window);
     glfwPollEvents();
-}
-
-void Lit_ClearWindow(lWindow *win, float r, float g, float b, float a)
-{
-    glClearColor(r / 255.0f, g / 255.0f, b / 255.0f, a / 255.0f);
-    glClear(GL_COLOR_BUFFER_BIT);
 }
 
 void Lit_DestroyWindow(lWindow *win)
