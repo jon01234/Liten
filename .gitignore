@@ -1,0 +1,4 @@
+**/*.o
+test/bin
+Liten/bin
+**/make
